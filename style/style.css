@@ -849,115 +849,73 @@ body {
 /*GALERIA*/
 
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-shadow: 0 1px 2px rgb(241, 241, 241);
-}
-
-
-/*Time to apply widths for accordian to work
-Width of image = 640px
-total images = 5
-so width of hovered image = 640px
-width of un-hovered image = 40px - you can set this to anything
-so total container width = 640 + 40*4 = 800px;
-default width = 800/5 = 160px;
-*/
-
-.contenedor-galeria {
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    align-items: start;
-    justify-items: start;
-    align-content: space-between;
-    justify-content: space-between;
-}
-
-.contenedor-galeria ul {
-    width: 2000px;
-}
-
-.contenedor-galeria li {
-    position: relative;
-    display: block;
-    width: 160px;
-    float: left;
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s;
-}
-
-.contenedor-galeria ul:hover li {
-    width: 40px;
-    filter: brightness(50%);
-}
-
-.contenedor-galeria ul li:hover {
-    width: 640px;
-    filter: brightness(100%);
-}
-
-.contenedor-galeria li img {
-    display: block;
-    width: 640px;
-    height: 100%;
-}
-
-.titulo-imagen {
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 100%;
+img {
     width: 100%;
-    display: block;
-    transition: all 0.5s ease;
-    animation: cambia-color 10s linear infinite;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
-    background-size: 400% 400%;
-}
+    height: 250px;
+  }
+  h2 {
+    margin-bottom: .5em;
+    color: white;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  
 
-@keyframes cambia-color {
-    0% {
-        background-position: 0%, 50%;
-    }
-    50% {
-        background-position: 100%, 50%;
-    }
-    100% {
-        background-position: 0%, 100%;
-    }
-}
-
-.titulo-imagen a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    padding: 20px;
-    font-size: 19px;
-    text-shadow: 0 1px 2px rgb(252, 249, 249);
-    transition: all 0.5s ease;
-}
-
-.contenedor-galeria ul li:hover .titulo-imagen {
-    top: 0%;
-    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-}
-
-.titulo-imagen:hover a {
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
     transform: scale(1.1);
-    transition: all 0.5s ease;
-}
-
-.titulo-imagen:active {
-    background: rgba(255, 255, 255, 0.5);
-}
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(184, 156, 159, 0.344);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* Media de Galeria */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
 
 /*ARREGLOS DE SECCION NOSOTROS*/
 
