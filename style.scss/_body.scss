@@ -1,0 +1,55 @@
+/*CSS en el body*/
+
+.barraOpciones {
+    background-image: linear-gradient(to left, #51ebff, #5898cc);
+    border-radius: 3px;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 100px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 7px 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+
+
+body {
+    background-image: linear-gradient(to left, #c3e1f9, #5aafba);
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+em,
+strong {
+    background-color: #427eff;
+}
