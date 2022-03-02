@@ -998,16 +998,21 @@ h1{
 
 
 /*INICIO DE SESION*/
-.container{
+
+
+
+.containerf{
     position: relative;
     max-width: 850px;
     width: 100%;
+    left:20px ;
     background: #fff;
     padding: 40px 30px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     perspective: 2700px;
   }
-  .container .cover{
+
+  .containerf .cover{
     position: absolute;
     top: 0;
     left: 50%;
@@ -1018,11 +1023,11 @@ h1{
     transform-origin: left;
     transform-style: preserve-3d;
   }
-  .container #flip:checked ~ .cover{
+  .containerf #flip:checked ~ .cover{
     transform: rotateY(-180deg);
   }
-   .container .cover .front,
-   .container .cover .back{
+   .containerf .cover .front,
+   .containerf .cover .back{
     position: absolute;
     top: 0;
     left: 0;
@@ -1033,28 +1038,28 @@ h1{
     transform: rotateY(180deg);
     backface-visibility: hidden;
   }
-  .container .cover::before,
-  .container .cover::after{
+  .containerf .cover::before,
+  .containerf .cover::after{
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(../image/verano.jpg);
-    z-index: 12;
+    background: #67c5da;
+    opacity: 0.5;
   }
-  .container .cover::after{
+  .containerf .cover::after{
     opacity: 0.3;
     transform: rotateY(180deg);
     backface-visibility: hidden;
   }
-  .container .cover img{
+  .containerf .cover img{
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: 10;
   }
-  .container .cover .text{
+  .containerf .cover .text{
     position: absolute;
     z-index: 130;
     height: 100%;
@@ -1075,12 +1080,12 @@ h1{
     font-size: 15px;
     font-weight: 500;
   }
-  .container .forms{
+  .containerf .forms{
     height: 100%;
     width: 100%;
     background: #fff;
   }
-  .container .form-content{
+  .containerf .form-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1102,7 +1107,7 @@ h1{
     bottom: 0;
     height: 3px;
     width: 25px;
-    background: #50a1bf;
+    background: #67c5da;
   }
   .forms .signup-form  .title:before{
     width: 20px;
@@ -1131,11 +1136,11 @@ h1{
   }
   .form-content .input-box input:focus,
   .form-content .input-box input:valid{
-    border-color: #3e9bcc;
+    border-color: #67c5da;
   }
   .form-content .input-box i{
     position: absolute;
-    color: #57c7b8;
+    color: #67c5da;
     font-size: 17px;
   }
   .forms .form-content .text{
@@ -1155,17 +1160,17 @@ h1{
   }
   .forms .form-content .button input{
     color: #fff;
-    background: #2ed3b5;
+    background: #67c5da;
     border-radius: 6px;
     padding: 0;
     cursor: pointer;
     transition: all 0.4s ease;
   }
   .forms .form-content .button input:hover{
-    background: #6fd1d8;
+    background: #67c5da;
   }
   .forms .form-content label{
-    color: #497cbf;
+    color: #67c5da;
     cursor: pointer;
   }
   .forms .form-content label:hover{
@@ -1176,11 +1181,11 @@ h1{
     text-align: center;
     margin-top: 25px;
   }
-  .container #flip{
+  .containerf #flip{
     display: none;
   }
   @media (max-width: 730px) {
-    .container .cover{
+    .containerf .cover{
       display: none;
     }
     .form-content .login-form,
@@ -1190,14 +1195,13 @@ h1{
     .form-content .signup-form{
       display: none;
     }
-    .container #flip:checked ~ .forms .signup-form{
+    .containerf #flip:checked ~ .forms .signup-form{
       display: block;
     }
-    .container #flip:checked ~ .forms .login-form{
+    .containerf #flip:checked ~ .forms .login-form{
       display: none;
     }
   }
-
 
 /*media queries*/
 
