@@ -13,7 +13,6 @@
 .nav1{
   display: flex;
   height: 80px;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -1003,11 +1002,9 @@ h1{
 
 .containerf{
     position: relative;
-    max-width: 850px;
     width: 100%;
-    left:20px ;
     background: #fff;
-    padding: 40px 30px;
+   
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     perspective: 2700px;
   }
