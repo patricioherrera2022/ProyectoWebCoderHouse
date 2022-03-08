@@ -123,6 +123,17 @@ input[type="checkbox"]{
   background-color: white;
   border-radius: 15px;
 }
+
+.contact-form1{
+  width: 53%;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+  background-color: white;
+  border-radius: 15px;
+  padding-bottom: 28%;
+}
+
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
