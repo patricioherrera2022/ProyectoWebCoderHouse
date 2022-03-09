@@ -131,7 +131,7 @@ input[type="checkbox"]{
   float: left;
   background-color: white;
   border-radius: 15px;
-  padding-bottom: 28%;
+  padding-bottom: 18%;
 }
 
 input[type=text], select, textarea{
