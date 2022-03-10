@@ -37,28 +37,90 @@
 
   
     
-    <div class="container6">
-      <div class="login-container6">
-        <div class="register">
-          <h2>Registrarse</h2>
-          <form action="">
-            <input type="text" placeholder="Nombre" class="nombre">
-            <input type="text" placeholder="Correo" class="correo">
-            <input type="password" placeholder="Contraseña" class="pass">
-            <input type="password" placeholder="Confirma contraseña" class="repass">
-            <input type="submit" class="submit" value="REGISTRARSE">
-          </form>
-        </div>
-        <div class="login">
-          <h2>Iniciar Sesión</h2>
-          <div class="login-items2">
-            <button class="fb"><i class="fab fa-facebook-f"></i> Acceder con Facebook</button>
-            <button class="tw"><i class="fab fa-twitter"></i> Acceder con Twitter</button>
-            <button class="correo"><i class="fas fa-envelope"></i> Acceder con Correo</button>
+    <div class="body-contenedor">
+      <div class="contenedor-sesion">
+          <div class="seccion">
+              <div class="titulo-seccion">
+                  <h5>Registrar</h5>
+              </div>
+              <form autocomplete="off" class="form-secion" action="#" method="post" accept-charset="utf-8">
+                  <div class="form-input">
+                      <input type="text" placeholder="Nombre" pattern="[A-Za-z0-9 ]{1,30}">
+                      <div class="icono">
+                          <i class="fas fa-user"></i>
+                      </div>
+                  </div>
+                  <div class="form-input">
+                      <input type="email" placeholder="Correo">
+                      <div class="icono">
+                          <i class="fas fa-envelope"></i>
+                      </div>
+                  </div>
+                  <div class="form-input">
+                      <input type="password" placeholder="Cotraseña" minlength="8">
+                      <div class="icono">
+                          <i class="fas fa-unlock"></i>
+                      </div>
+                  </div>
+                  <div class="form-input">
+                      <input type="password" placeholder="Repetir Cotraseña"  minlength="8">
+                      <div class="icono">
+                          <i class="fas fa-unlock"></i>
+                      </div>
+                  </div>
+                  <div class="form-boton">
+                      <button type="submit" class="btn-form registro">
+                          Registrar
+                      </button>
+                  </div>
+              </form>
           </div>
-        </div>
+          <div class="divisor">
+              <div class="contenedor-icono">
+                  <i class="far fa-address-card"></i>
+              </div>
+          </div>
+          <div class="seccion">
+              <div class="titulo-seccion">
+                  <h5>Iniciar sesión</h5>
+              </div>
+              <div class="inciar-con">
+                  <div class="form-boton">
+                      <button type="submit" class="btn-form facebook">
+                          <i class="fab fa-facebook-square"></i>
+                          facebook
+                      </button>
+                  </div>
+                  <div class="form-boton">
+                      <button type="submit" class="btn-form google">
+                          <i class="fab fa-google"></i>
+                          Google
+                      </button>
+                  </div>
+              </div>
+              <form class="form-secion" action="#" method="post" accept-charset="utf-8">
+                  <div class="form-input">
+                      <input type="email" placeholder="Correo">
+                      <div class="icono">
+                          <i class="fas fa-envelope"></i>
+                      </div>
+                  </div>
+                  <div class="form-input">
+                      <input type="password" placeholder="Cotraseña" minlength="8">
+                      <div class="icono">
+                          <i class="fas fa-unlock"></i>
+                      </div>
+                  </div>
+                  
+                  <div class="form-boton">
+                      <button type="submit" class="btn-form iniciar">
+                          Iniciar
+                      </button>
+                  </div>
+              </form>
+          </div>
       </div>
-    </div>
+  </div>
     
     
     <!--Footer -->
