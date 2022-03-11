@@ -1103,9 +1103,53 @@ h1{
   }
 }
   
+/*FAQ*/
 
+.box5{
+  width: 620px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
 
-/*CSS pie de pagina*/
+.box5 .heading{
+  background: #7800CF;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik";
+}
+
+.faqs{
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+  float: right;
+  margin-top: 3px;
+}
+
+.text{
+  color: rgb(130, 130, 130)
+}
+
+details{
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-family: "Rubik";
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary{
+  outline: none;
+}
+/*CSS pie de pagina (FOOTER)*/
 
 footer{
   width: 100%;
